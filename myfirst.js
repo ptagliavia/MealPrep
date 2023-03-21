@@ -3,7 +3,7 @@ const app = express();
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://ptagliaviadev:<password>@cluster0.xqxsnzj.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://ptagliaviadev:KWXwicwGwvPFOGL6@cluster0.xqxsnzj.mongodb.net/?retryWrites=true&w=majority');
 
 app.get('/', (reg,res) => {
     res.send({hi: 'there'})
