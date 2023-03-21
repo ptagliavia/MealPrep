@@ -9,6 +9,13 @@ app.get('/', (reg,res) => {
     res.send({hi: 'there'})
 });
 
+app.get('/', (reg,res) => {
+    res.send({hi: 'there'})
+});
+
+app.get("/home", (req, res) => {
+    res.sendFile(__dirname + "/views/home.html");
+});
 
 //alt syntax using bodied function
 /*app.get('/', function (req, res) {
