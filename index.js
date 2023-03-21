@@ -1,3 +1,6 @@
+import * as React from 'react';
+import Button from '@mui/material/Button';
+
 const express = require('express');
 const app = express();
 
@@ -26,6 +29,9 @@ app.get("/serversiderendering", (req, res) => {
         <p>This content is being served by the server.</p>
         <nav id="navigation"></nav>
         <p>This paragraph is also a part of HTML.</p>
+        <div>
+            <Button variant="contained">Hello World</Button>
+        </div>
         </body>
         </html>
     `
