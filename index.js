@@ -17,6 +17,21 @@ app.get("/home", (req, res) => {
     res.sendFile(__dirname + "/views/home.html");
 });
 
+app.get("/serversiderendering", (req, res) => {
+    const html = `
+        <!DOCTYPE html>
+        <html>
+        <head><title>My app</title></head>
+        <body>
+        <p>This content is being served by the server.</p>
+        <nav id="navigation"></nav>
+        <p>This paragraph is also a part of HTML.</p>
+        </body>
+        </html>
+    `
+    res.send(html);
+});
+
 //alt syntax using bodied function
 /*app.get('/', function (req, res) {
     res.send('Hello World from GCE!');
